@@ -138,9 +138,9 @@
 
         <div class="slide" align="center">
             <h2>When should I<br/>move to Drupal 8?</h2>
-            <h1 class="incremental" style="margin-top: 1em;">2014</h1>
+            <h1 class="incremental" style="margin-top: 0.5em;">2014</h1>
             <p class="incremental">(According to Dries)</p>
-            <h1 class="incremental" style="margin-top: 1em;">2014-2015</h1>
+            <h1 class="incremental" style="margin-top: 0.5em;">2014-2015</h1>
             <p class="incremental">(According to Dave)</p>
         </div>
 
@@ -290,12 +290,9 @@
 
         <div class="slide" align="center">
             <h2>Breakpoint Module</h2>
-            <img alt="breakpoint" src="images/breakpoint-module.png" />
-        </div>
-
-        <div class="slide" align="center">
+            <img alt="breakpoint" style="height: 150px;" src="images/breakpoint-module.png" />
             <h2>Picture Module</h2>
-            <img alt="picture module" src="images/picture-module.png" />
+            <img alt="picture module" style="height: 150px;"  src="images/picture-module.png" />
         </div>
 
         <div class="slide" align="center">
@@ -345,16 +342,6 @@
             <h2>Tour Module</h2>
             <img alt="tour module" src="images/tour-module.png" />
             <p><a href="https://drupal.org/node/2040369" target="_blank">Not currently working</a></p>
-        </div>
-
-        <div class="slide" align="center">
-            <h2>Select Multiple Files</h2>
-            <img alt="file selector" style="width: 400px;" src="images/file-selector.png" />
-        </div>
-
-        <div class="slide" align="center">
-            <h2>Multiple Upload</h2>
-            <img alt="select four files" src="images/four-files.png" />
         </div>
 
         <div class="slide" align="center">
@@ -459,6 +446,16 @@
          <div class="slide">
             <h1><br />HTML5 Form Elements</h1>
             <h3>url, email, tel, date, color, range, number, search, and more!</h3>
+        </div>
+
+        <div class="slide" align="center">
+            <h2>Select Multiple Files</h2>
+            <img alt="file selector" style="width: 400px;" src="images/file-selector.png" />
+        </div>
+
+        <div class="slide" align="center">
+            <h2>Multiple Upload</h2>
+            <img alt="select four files" src="images/four-files.png" />
         </div>
 
 
@@ -575,10 +572,6 @@
         </div>
 
         <div class="slide" align="center">
-            <h1>Views in Core<br /><em>Born here at Twin Cities Drupal Camp in 2012</em></h1>
-        </div>
-
-        <div class="slide" align="center">
             <h1><em>Views</em><br />Merged into core on<br />Oct. 22, 2012</h1>
         </div>
 
@@ -688,14 +681,24 @@
         </div>
 
         <div class="slide">
-            <div style="float: left; width: 40%;">
-                <h2 style="margin-top: 2em;"><em>Twig</em><br />New template engine</h2>
-            </div>
-            <img alt="twig" style="width: 45%; margin-left: 30px;" src="images/twig.png" />
+            <h1><em>Twig</em><br />New template engine</h1>
+            <h4><a href="http://twig.sensiolabs.org/">http://twig.sensiolabs.org/</a></h4>
         </div>
 
         <div class="slide" align="center">
-            <h1><br /><em>tpl.php</em> files are gone</h1>
+            <h1><em>tpl.php</em> files are gone</h1>
+            <h2>Now use html.twig files!</h2>
+            <pre class="brush: php">
+{% if title %}
+  <h4 class="label">
+    {{ '!title!required'|t({ '!title': title, '!required': required }) }}
+  </h4>
+{% endif %}
+{{ content }}
+{% if description %}
+  <div class="description">{{ description }}</div>
+{% endif %}
+            </pre>
         </div>
 
         <div class="slide" align="center">
@@ -736,16 +739,31 @@
             <img alt="drag-n-drop" src="images/drag-drop.png" />
         </div>
 
-
         <div class="slide" align="center">
-            <h1>Improved Accessiblity</h1>
-            <h4><a style="text-decoration: none;" href="https://groups.drupal.org/accessibility">groups.drupal.org/accessibility</a></h4>
-            <h2><br />TCDC: Saturday at 2:15 PM</h2>
-            <h4>"Accessible in 8"</h4>
-            <h4>jessebeach</h4>
+            <h1>New modules in core</h1>
+            <div style="float: left; width: 40%;">
+                <h4 class="incremental">Breakpoint</h4>
+                <h4 class="incremental">CKEditor</h4>
+                <h4 class="incremental">Config</h4>
+                <h4 class="incremental">Content Translation (entity translation)</h4>
+                <h4 class="incremental">Datetime</h4>
+                <h4 class="incremental">Edit</h4>
+                <h4 class="incremental">Editor</h4>
+                <h4 class="incremental">Email</h4>
+                <h4 class="incremental">Entity Reference</h4>
+            </div>
+            <div style="float: left; width: 40%;">
+                <h4 class="incremental">HAL</h4>
+                <h4 class="incremental">Layout</h4>
+                <h4 class="incremental">Link</h4>
+                <h4 class="incremental">Picture</h4>
+                <h4 class="incremental">REST</h4>
+                <h4 class="incremental">Serialization</h4>
+                <h4 class="incremental">Telephone</h4>
+                <h4 class="incremental">Tour</h4>
+                <h4 class="incremental">Views</h4>
+            </div>
         </div>
-
-
 
 
         <!-- Wrap up -->
